@@ -63,7 +63,7 @@ We need to set up a config file, so first we make a directory for it:
 
 Next we need to create a config file and give it some configurations. First we create and edit the file:
 
-`$ nano ~/.zcash/litcoin.conf`
+`$ nano ~/.litcoin/litcoin.conf`
 
 Enter the following in the file:
 
@@ -82,15 +82,15 @@ Then save the file (within nano you do this via `CTRL+X` then `Y`).
 
 Now that your config file is set up, you start the zcash server via:
 
-`$ ~/zcash/./src/zcashd -daemon`
+`$ ~/litcoin/./src/zcashd -daemon`
 
 Give your server a few seconds to finish loading. You can check to see if it's working via:
 
-`$ ~/zcash/./src/zcash-cli getinfo`
+`$ ~/litcoin/./src/zcash-cli getinfo`
 
 Give your node time to catch up with the blockchain. You can see how many blocks your node has received/checked by running the following command and looking at the line labelled *blocks*:
 
-`$ ~/zcash/./src/zcash-cli getinfo`
+`$ ~/litcoin/./src/zcash-cli getinfo`
 
 That's it! You're mining zcash!
 
@@ -101,10 +101,10 @@ Now that your miner is running, there are some commands you'll want to familiari
 #### Stop/Start Mining
 
 If you want to stop mining use the command:
-`$ ~/zcash/./src/zcash-cli setgenerate false`
+`$ ~/litcoin/./src/zcash-cli setgenerate false`
 
 You can start up again via the command:
-`$ ~/zcash/./src/zcash-cli setgenerate true`
+`$ ~/litcoin/./src/zcash-cli setgenerate true`
 
 It can take a few seconds for your node to startup/stop after issuing these commands. Be patient.
 
@@ -112,7 +112,7 @@ It can take a few seconds for your node to startup/stop after issuing these comm
 
 To check if you've mined coins first run the command:
 
-`$ ~/zcash/./src/zcash-cli listtransactions`
+`$ ~/litcoin/./src/zcash-cli listtransactions`
 
 This will output a list of *all* transactions associated with your wallet, along with their details. Any transaction in that list that has `"generated" : true` is *coinbase transaction*. Those are coins that you've mined!
 
@@ -124,21 +124,8 @@ Be patient, and after 100 blocks this will switch to `"generated" : true` -- at 
 
 You can see your balance by running the following command and looking for `"balance": xxxxx`:
 
-`$ ~/zcash/./src/zcash-cli getinfo`
+`$ ~/litcoin/./src/zcash-cli getinfo`
 
 Note that your mined coins won't show up in your balance until they are 100 blocks deep.
 
-## Beyond Mining
 
-To learn how to send/receive your coins, protect them, and perform private spends, you should head back to [this part](https://github.com/zcash/zcash/wiki/Beta-Guide#getting-testcoins) of the Public-Beta-Guide
-
-
-### Donations
-
-Donations are appreciated but not expected. If you feel like showing some love for me putting this guide together can do so here:
-
-![QRC](https://i.imgur.com/InuY6td.png)
-
-BTC: [1AwkkQrKPNPPKkyALd9KfnzCu6Q1CWniPZ](https://blockchain.info/address/1AwkkQrKPNPPKkyALd9KfnzCu6Q1CWniPZ)
-
-Thank you!
