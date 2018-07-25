@@ -23,8 +23,6 @@ $ ./zcutil/fetch-params.sh
 
 This will fetch the public beta proving and verifying keys and place them into ~/.zcash-params/. These keys are, together, nearly 1.5GB in size, so it may take some time to download them.
 
-## Compiling
-
 gcc/g++ 4.9 or later is required. Litcoin has been successfully built using gcc/g++ versions 4.9 to 7.x inclusive. Use g++ --version to check which version you have.
 
 On Ubuntu Trusty, if your version is too old then you can install gcc/g++ 4.9 as follows:
@@ -34,6 +32,8 @@ $ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 $ sudo apt-get update
 $ sudo apt-get install g++-4.9
 `
+
+## Compiling
 
 Ensure you have successfully installed all system package dependencies as described above. Then run the build:
 
