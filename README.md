@@ -27,11 +27,11 @@ gcc/g++ 4.9 or later is required. Litcoin has been successfully built using gcc/
 
 On Ubuntu Trusty, if your version is too old then you can install gcc/g++ 4.9 as follows:
 
-`
+```
 $ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 $ sudo apt-get update
 $ sudo apt-get install g++-4.9
-`
+```
 
 ## Compiling
 
