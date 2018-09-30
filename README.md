@@ -84,6 +84,9 @@ Now that your config file is set up, you start the zcash server via:
 
 `$ ./src/zcashd -daemon`
 
+To stop the daemon, enter the command
+`$ ./src/zcash-cli stop `
+
 Give your server a few seconds to finish loading. You can check to see if it's working via:
 
 `$ ./src/zcash-cli getinfo`
